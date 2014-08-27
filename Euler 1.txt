@@ -7,10 +7,10 @@ def Multiples():
 	
 
 ## Problem 2: Fibonacci Sequence ##
-def Fibonacci():
+def Fibonacci(f):
 	a = 0
 	b = 1
-	while a < 100:
+	while a < f:
 		print a
 		print b
 		a = a + b
