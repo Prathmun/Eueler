@@ -1,5 +1,25 @@
+## Problem 1: Multiples of 3 and 5 ##
+def Multiples():
+	multip3 = range(0, 1000, 3)
+	multip5 = range(0, 1000, 5)
+	multip3n5 = list(set(multip3) | set(multip5))
+	print multip3n5
+	
+
+## Problem 2: Fibonacci Sequence ##
+def Fibonacci():
+	a = 0
+	b = 1
+	while a < 100:
+		print a
+		print b
+		a = a + b
+		b = a + b
+
+
+## Problem 3 (partial): Prime number finder ##
 def primeNumbers(n):
-	a = 1
+	a = 1			# Resets variable "a" to 1
 	while a < n-1:
 		a = a + 2
 		if n%a != 0:
