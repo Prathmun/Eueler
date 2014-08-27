@@ -1,7 +1,7 @@
 ## Problem 1: Multiples of 3 and 5 ##
-def Multiples():
-	multip3 = range(0, 1000, 3)
-	multip5 = range(0, 1000, 5)
+def Multiples(m):
+	multip3 = range(0, m, 3)
+	multip5 = range(0, m, 5)
 	multip3n5 = list(set(multip3) | set(multip5))
 	print multip3n5
 	
