@@ -4,6 +4,11 @@ def Multiples(m): 					# Finds all numbers with multiples of 3 or 5 from up to "
 	multip5 = range(0, m, 5)
 	multip3n5 = list(set(multip3) | set(multip5))
 	print multip3n5
+	total = 0
+	for each i in multip3n5:
+            total = i + total
+        print total
+                    
 	
 
 			## Problem 2: Fibonacci Sequence ##
@@ -24,3 +29,6 @@ def primeNumbers(n): 					# Find all primes up to "n"
 		a = a + 2
 		if n%a != 0:
 			print a
+
+Multiples(500)
+
